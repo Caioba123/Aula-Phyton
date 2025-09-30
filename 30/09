@@ -1,0 +1,100 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNN6gjRYyirpn6Up19KPK9M",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Caioba123/Aula-Phyton/blob/main/30/09\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 20,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZMmTcqv5RfoP",
+        "outputId": "0e4e77c7-292d-459e-cd57-469d905b6799"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá Mundo!\n",
+            "Olá! Meu nome é Caioba e eu tenho 16 anos.\n",
+            "Qual o seu nome?Caioba\n",
+            "Bem Vindo(a), Caioba\n",
+            "Reprovado\n",
+            "Soma: 15\n",
+            "Subtração: 5\n",
+            "Divisão: 2.0\n",
+            "Multiplicação: 50\n",
+            "\n",
+            "Qual o maior valor?\n",
+            "A operação que retorna o maior valor é a Multiplicação com o valor de 50.\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Olá Mundo!\")\n",
+        "nome = \"Caioba\"\n",
+        "idade = 16\n",
+        "print(\"Olá! Meu nome é\" , nome, \"e eu tenho\" , idade, \"anos.\")\n",
+        "\n",
+        "nome = input(\"Qual o seu nome?\")\n",
+        "print(\"Bem Vindo(a),\", nome)\n",
+        "\n",
+        "nota = 5\n",
+        "if nota >=6:\n",
+        "  print(\"Aprovado\")\n",
+        "else:\n",
+        "  print(\"Reprovado\")\n",
+        "\n",
+        "a = 10\n",
+        "b = 5\n",
+        "\n",
+        "soma = a + b\n",
+        "subtracao = a - b\n",
+        "divisao = a / b\n",
+        "multiplicacao = a * b\n",
+        "\n",
+        "print(\"Soma:\", soma)\n",
+        "print(\"Subtração:\", subtracao)\n",
+        "print(\"Divisão:\", divisao)\n",
+        "print(\"Multiplicação:\", multiplicacao)\n",
+        "\n",
+        "resultados = {\n",
+        "    \"Soma\": soma,\n",
+        "    \"Subtração\": subtracao,\n",
+        "    \"Divisão\": divisao,\n",
+        "    \"Multiplicação\": multiplicacao\n",
+        "}\n",
+        "\n",
+        "maior_valor = max(resultados, key=resultados.get)\n",
+        "print(\"Qual o maior valor?\")\n",
+        "print(f\"A operação que retorna o maior valor é a {maior_valor} com o valor de {resultados[maior_valor]}.\")"
+      ]
+    }
+  ]
+}
